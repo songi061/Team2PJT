@@ -52,5 +52,8 @@ def upload(request) :
 
 
 def shampooButton(request):
-    return render(request, 'mainpage/shampoo.html')
+    return render(request, 'mainpage/loss.html')
 
+def loss(request) :
+    print('debug >>> mainApp /loss')
+    return render(request, 'mainpage/loss.html')
