@@ -44,7 +44,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3><strong>두피 진단 결과 당신의 두피 유형은 "탈모"입니다</strong></h3>
+              <h3><strong>두피 진단 결과 당신의 두피 유형은 "{{predicted_label}}"입니다</strong></h3>
               <p>
                 탈모는 정상적으로 모발이 존재해야 할 부위에 모발이 없거나 빈약한 상태를 말하며, 일반적으로 두피의 성모(굵고 검은 머리털)가 빠지는 것을 의미합니다. 모발 생성에 필요한 영양공급과 신진대사가 원활하게 이루어 지지 않아 생기는 진행성 질환입니다. 흔히 하루 약 50-70개 정도의 머리카락이 빠지고 새로 자라나는과정은 극히 정상적입니다. 그러나 하루 100개 넘는 머리카락이 빠지면 탈모를 의심할 수 있습니다.
               </p>
@@ -75,7 +75,7 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("/static/img/그림1.jpg");' data-aos="fade-left" data-aos-delay="100">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("/media/{{fileName}}");' data-aos="fade-left" data-aos-delay="100">&nbsp;</div>
         </div>
 
       </div>
