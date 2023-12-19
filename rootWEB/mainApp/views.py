@@ -85,3 +85,8 @@ def loss(request) :
     print('debug >>> mainApp /loss')
     return render(request, 'mainpage/loss.html')
 
+def dandruff(request) :
+    print('debug >>> mainApp /dandruff')
+    return render(request, 'mainpage/dandruff.html')
+
+

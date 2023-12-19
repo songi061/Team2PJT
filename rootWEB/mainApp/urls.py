@@ -13,6 +13,7 @@ urlpatterns = [
     path("upload/", views.upload),
     path('shampooButton/', views.shampooButton, name='shampooButton'),
     path('loss/', views.loss),
+    path('dandruff/', views.dandruff),
 ]
 
 
