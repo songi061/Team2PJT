@@ -73,8 +73,10 @@ def upload(request) :
     pre_train_model = keras.models.load_model('C:/Users/rjdls/PycharmProjects/Team2PJT/rootWEB/mainApp/static/hair_predict_model')
     guess = pre_train_model.predict(img)
     labels = ['양호', '경증 비듬', '중등도 비듬', '중증 비듬', '경증 탈모', '중등도 탈모', '중증 탈모']
+    links  = ['/shampoo', '/dandruff', '/dandruff', '/dandruff', '/loss', '/loss', '/loss']
     predicted_label = labels[np.argmax(guess)]
-    return render(request, 'mainpage/scalp.html', {'predicted_label': predicted_label, 'fileName' : fileName})
+    links_label     = links[np.argmax(guess)]
+    return render(request, 'mainpage/scalp.html', {'predicted_label': predicted_label, 'fileName' : fileName, 'links_label' : links_label})
 
 
 
